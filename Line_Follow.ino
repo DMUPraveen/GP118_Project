@@ -38,6 +38,7 @@ auto robot = Robot(&motors,&sensors);
 while (true)
 {
     robot.P_Control();
+    Serial.println("Hello World");
 }
 
 
