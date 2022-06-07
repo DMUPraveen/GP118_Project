@@ -1,3 +1,7 @@
+#ifndef SENSOR
+#define SENSOR
+
+
 struct  SensorArray
 {
     const uint8_t* analog_pins = nullptr;
@@ -31,3 +35,4 @@ struct  SensorArray
         return pos/number;
     }
 };
+#endif
