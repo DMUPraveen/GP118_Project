@@ -1,8 +1,6 @@
 {
     "sketch": "Line_Follow.ino",
     "output": "build",
-    "board": "arduino:avr:mega",
-    "port": "COM4",
-    "programmer": "arduino:avrisp",
-    "configuration": "cpu=atmega2560"
+    "configuration": "cpu=atmega2560",
+    "board": "arduino:avr:mega"
 }

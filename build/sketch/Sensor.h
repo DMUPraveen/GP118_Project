@@ -1,4 +1,8 @@
 #line 1 "c:\\Users\\dell\\Desktop\\University\\Semester2\\Elec Project\\Line_Follow_Code\\Sensor.h"
+#ifndef SENSOR
+#define SENSOR
+
+
 struct  SensorArray
 {
     const uint8_t* analog_pins = nullptr;
@@ -32,3 +36,4 @@ struct  SensorArray
         return pos/number;
     }
 };
+#endif
