@@ -32,6 +32,7 @@ struct  SensorArray
         if(!number){
             return 0;
         }
+        found = true;
         return pos/number;
     }
 };
