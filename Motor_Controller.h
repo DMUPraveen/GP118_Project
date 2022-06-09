@@ -41,7 +41,8 @@ struct MotorController
         mb_v : velocity of motor B normalized (between -1 and 1)
         
         */
-
+        analogWrite(ena,abs(ma_v)*ANALOG_OUTPUT_SCALE);
+        analogWrite(enb,abs(mb_v)*ANALOG_OUTPUT_SCALE);
         if(ma_v >= 0){
             digitalWrite(ma_in1,HIGH);
             digitalWrite(ma_in2,LOW);
@@ -60,8 +61,7 @@ struct MotorController
             digitalWrite(mb_in2,HIGH);
         }   
 
-        analogWrite(ena,abs(ma_v)*ANALOG_OUTPUT_SCALE);
-        analogWrite(enb,abs(mb_v)*ANALOG_OUTPUT_SCALE);
+
         
 
     }

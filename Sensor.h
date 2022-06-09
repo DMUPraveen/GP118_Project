@@ -29,7 +29,7 @@ struct  SensorArray
                 number += 1;
             }
         }
-        if(!number){
+        if(number==0){
             return 0;
         }
         found = true;
