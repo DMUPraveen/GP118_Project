@@ -70,17 +70,6 @@ struct MotorController
 
 
 void check_motors(MotorController& motors,uint32_t dtime){
-    Serial.println("FF");
     motors.control(1,1);
-    delay(dtime);
-    Serial.println("FR");
-    motors.control(1,-1);
-    delay(dtime);
-    Serial.println("RF");
-    motors.control(-1,1);
-    delay(dtime);
-    Serial.println("RR");
-    motors.control(-1,-1);
-    delay(dtime);
 }
 #endif

@@ -35,10 +35,15 @@ auto motors = MotorController(
 auto sensors = SensorArray(sensor_array_pins,8,900);
 // bool found = false;
 auto robot = Robot(&motors,&sensors);
+// check_motors(motors,5000);
+// while(!Serial.available()){
+    
+// }
 while (true)
 {
+    //check_motors(motors,2000);
     robot.P_Control();
-    Serial.println("Hello World");
+
 }
 
 

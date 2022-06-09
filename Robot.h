@@ -19,7 +19,7 @@ struct Robot{
         bool found = false;
         for(;;){
             auto reading = sensor->calculate_digital(found);
-            motor->control(0.5+0.5*reading,0.5-0.5*reading);
+            motor->control(0.5-0.5*reading,0.5+0.5*reading);
         }
     }
 };
